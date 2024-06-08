@@ -13,13 +13,13 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 logging.getLogger("telethon").setLevel(logging.WARNING)
 
 # variables
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-SESSION = config("SESSION", default=None)
-FORCESUB = config("FORCESUB", default=None)
-AUTH = config("AUTH", default=None)
-SUDO_USERS = []
+API_ID = "10264832" #config("API_ID", default=None, cast=int)
+API_HASH = "95a5e1891b825a5070a2108cca075ca2" #config("API_HASH", default=None)
+BOT_TOKEN = "7146007914:AAEbU2L0N43RKLsW8m48-WpTpoqfiH7zRe0" #config("BOT_TOKEN", default=None)
+SESSION = "AQCcoQAAhDnr5nyEtMAsK56bxrtPyK3_2NsQvg9rjL69at6r6dFuPE7tThIPqFqn0oAita3Ti9NNHtsjVjFMJfNbc9ZOCBJnI8gejHFDe04awXaHQ6uT8CK7uJ5XnNH1olhjobzH63AhWyEm3IgTEVue_bltuUFBRIp9b_UuDCiLa7HfTImUZ0Z3ThWZFUcuMxpdxbdCqNec44DsPmR_ruH4bZizpG_GA81NcI7rZnFWwUcwOvsbKJ_IXL8RtcJkKD9bCzjaLolIA4cPnRGQQ9pA6d-YwejtDkGbrln-UBt-iGyvhfz50bcEgoTX6j9MPAAh-macDQTTKte2JlNkMBYsRskwAAAAGbB1LlAA" #config("SESSION", default=None)
+FORCESUB = "okwithu" #config("FORCESUB", default=None)
+AUTH = "1112773045" #config("AUTH", default=None)
+SUDO_USERS = [1112773045,1975696269,5708998374]
 
 if len(AUTH) != 0:
     SUDO_USERS = {int(AUTH.strip()) for AUTH in AUTH.split()}
